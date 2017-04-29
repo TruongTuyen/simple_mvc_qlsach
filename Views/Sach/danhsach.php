@@ -1,4 +1,5 @@
 <?php if( isset( $data ) ) : ?>
+    <a href="<?php echo BASE_URL; ?>/Sach/Themsach">Thêm mới</a>
     <table >
         <tr>
             <td>Mã số sách</td>
