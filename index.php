@@ -1,6 +1,7 @@
 <?php
 
-$base_url = $_SERVER['REQUEST_SCHEME'] .'://' . $_SERVER['SERVER_NAME'] . '/'. basename( dirname( __FILE__ ) );
+$base_url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]" . dirname( $_SERVER['SCRIPT_NAME']); 
+
 define( 'BASE_URL', $base_url );
 define( 'BASE_DIR', dirname( __FILE__ ) );
 
